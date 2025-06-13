@@ -47,7 +47,7 @@
     "ai": "4.3.16",
     "dotenv": "16.5.0",
     "playwright": "1.53.0",
-    "zod": "3.25.63"
+    "zod": "3.25.64"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
