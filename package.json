@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "pnpm mastra:dev",
-    "mastra:build": "mastra build",
-    "mastra:dev": "mastra dev",
+    "do-co:up": "docker-compose -f ./docker-compose.yml up",
+    "do-co:down": "docker-compose -f ./docker-compose.yml down --rmi 'all'",
+    "do-co:dev:up": "docker-compose -f ./docker-compose.dev.yml up",
+    "do-co:dev:down": "docker-compose -f ./docker-compose.dev.yml down --rmi 'all'",
+    "mastra:build": "MASTRA_TELEMETRY_DISABLED=1 mastra build",
+    "mastra:dev": "MASTRA_TELEMETRY_DISABLED=1 mastra dev",
     "mastra:start": "mastra start",
-    "postinstall": "playwright install",
+    "playwright:install": "pnpm exec playwright install --with-deps chromium",
+    "postinstall": "pnpm playwright:install",
     "run-file:dev": "cross-env NODE_ENV=development LOCAL_DEV=true tsx --env-file=.env --trace-warnings ",
     "run-file:prod": "cross-env NODE_ENV=production tsx --env-file=.env ",
     "scratch": "pnpm run-file:dev -- ./src/scratch.ts",
@@ -47,7 +53,7 @@
     "ai": "4.3.16",
     "dotenv": "16.5.0",
     "playwright": "1.53.0",
-    "zod": "3.25.64"
+    "zod": "3.25.65"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -59,12 +65,19 @@
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
+  "peerDependencies": {
+    "gray-matter": "^4.0.3",
+    "remark-parse": "^11.0.0",
+    "unified": "^11.0.5"
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-git"
     }
   },
   "volta": {
-    "node": "24.2.0"
-  }
+    "node": "24.2.0",
+    "pnpm": "10.12.1"
+  },
+  "packageManager:": "pnpm@10.12.1"
 }
