@@ -1,13 +1,14 @@
 import { Mastra } from '@mastra/core/mastra';
-import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore, LibSQLVector } from '@mastra/libsql';
+import { PinoLogger } from '@mastra/loggers';
 
-import { financialAgent } from './agents/finance-agent.ts';
-import { learningAssistantAgent } from './agents/learning-assistant.js';
-import { memoryAgent } from './agents/memory-agent.js';
-import { personalAssistantAgent } from './agents/personal-assistant-agent.js';
-import { weatherWorkflow } from './workflows/weather-workflow.ts';
-import { weatherAgent } from './agents/weather-agent.ts';
+import { financialAgent } from './agents/finance-agent';
+import { learningAssistantAgent } from './agents/learning-assistant';
+import { memoryAgent } from './agents/memory-agent';
+import { personalAssistantAgent } from './agents/personal-assistant-agent';
+import { weatherAgent } from './agents/weather-agent';
+import { notes } from './mcp/server';
+import { weatherWorkflow } from './workflows/weather-workflow';
 
 const {
   SQLITE_DB_PATH,
@@ -29,6 +30,10 @@ const logger = new PinoLogger({
   level: 'info',
 });
 
+const mcpServers = {
+  notes,
+};
+
 const storage = new LibSQLStore({
   url: `file:${SQLITE_DB_PATH}${MASTRA_STORAGE_DB_NAME}`,
 });
@@ -46,6 +51,7 @@ const workflows = { weatherWorkflow };
 export const mastra = new Mastra({
   agents,
   logger,
+  mcpServers,
   storage,
   workflows,
   vectors,

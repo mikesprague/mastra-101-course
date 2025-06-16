@@ -23,8 +23,8 @@ const mcp = new MCPConfiguration({
       url: new URL(COMPOSIO_MCP_GITHUB || ''),
     },
     hackernews: {
-      command: 'npx',
-      args: ['-y', '@devabdultech/hn-mcp-server'],
+      command: 'pnpx',
+      args: ['@devabdultech/hn-mcp-server'],
     },
     textEditor: {
       command: 'pnpx',
