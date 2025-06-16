@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install --no-install-recommends -qy locales tzdata
   && apt-get autoremove -qy --purge \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /.cache/*
-WORKDIR /usr/src/app
+WORKDIR /usr/workdir
 COPY ["package.json", "pnpm-lock.yaml", "./"]
 COPY . .
 EXPOSE 4111
