@@ -1,0 +1,15 @@
+services:
+  aighecdocs:
+    image: aighecdocs
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: development
+    environment:
+      NODE_ENV: development
+    env_file:
+      - .env
+    ports:
+      - 4111:4111
+      - 9229:9229
+    command: ["pnpm", "mastra:dev"]
