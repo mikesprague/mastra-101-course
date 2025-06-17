@@ -1,6 +1,6 @@
 services:
-  aighecdocs:
-    image: aighecdocs
+  mastra-101:
+    image: mikesprague/mastra-101:latest
     build:
       context: .
       dockerfile: ./Dockerfile

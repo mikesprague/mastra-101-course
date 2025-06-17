@@ -10,11 +10,11 @@
     "do-co:down": "docker-compose -f ./docker-compose.yml down --rmi 'all'",
     "do-co:dev:up": "docker-compose -f ./docker-compose.dev.yml up",
     "do-co:dev:down": "docker-compose -f ./docker-compose.dev.yml down --rmi 'all'",
-    "mastra:build": "MASTRA_TELEMETRY_DISABLED=1 mastra build",
-    "mastra:dev": "MASTRA_TELEMETRY_DISABLED=1 mastra dev",
-    "mastra:start": "mastra start",
-    "playwright:install": "pnpm exec playwright install --with-deps chromium",
-    "postinstall": "pnpm playwright:install",
+    "docker:build": "docker build -t mikesprague/mastra-101:latest --target production --compress --no-cache .",
+    "docker:build:dev": "docker build -t mikesprague/mastra-101:dev --target development --compress --no-cache .",
+    "mastra:build": "cross-env MASTRA_TELEMETRY_DISABLED=1 NODE_ENV=production pnpm exec mastra build",
+    "mastra:dev": "cross-env MASTRA_TELEMETRY_DISABLED=1 NODE_ENV=development pnpm exec mastra dev",
+    "mastra:start": "cross-env NODE_ENV=production pnpm exec mastra start",
     "run-file:dev": "cross-env NODE_ENV=development LOCAL_DEV=true tsx --env-file=.env --trace-warnings ",
     "run-file:prod": "cross-env NODE_ENV=production tsx --env-file=.env ",
     "scratch": "pnpm run-file:dev -- ./src/scratch.ts",
@@ -36,39 +36,25 @@
   },
   "dependencies": {
     "@ai-sdk/azure": "1.3.23",
-    "@ai-sdk/openai": "1.3.22",
-    "@libsql/client": "0.15.9",
-    "@mastra/agui": "^1.0.2",
-    "@mastra/client-js": "^0.10.4",
     "@mastra/core": "^0.10.5",
-    "@mastra/evals": "^0.10.3",
-    "@mastra/fastembed": "^0.10.0",
     "@mastra/libsql": "^0.10.2",
     "@mastra/loggers": "^0.10.2",
     "@mastra/mcp": "^0.10.3",
     "@mastra/memory": "^0.10.3",
-    "@mastra/mongodb": "^0.10.3",
-    "@mastra/pg": "^0.10.3",
-    "@mastra/rag": "^0.10.3",
     "ai": "4.3.16",
-    "dotenv": "16.5.0",
-    "playwright": "1.53.0",
-    "zod": "3.25.65"
+    "zod": "3.25.67"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "24.0.3",
-    "@types/uuid": "10.0.0",
     "cross-env": "7.0.3",
     "cz-git": "1.11.2",
     "mastra": "^0.10.5",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
-  "peerDependencies": {
-    "gray-matter": "^4.0.3",
-    "remark-parse": "^11.0.0",
-    "unified": "^11.0.5"
+  "resolutions": {
+    "@libsql/client": "0.15.9"
   },
   "config": {
     "commitizen": {

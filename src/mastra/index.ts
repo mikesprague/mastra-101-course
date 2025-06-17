@@ -7,7 +7,6 @@ import { learningAssistantAgent } from './agents/learning-assistant';
 import { memoryAgent } from './agents/memory-agent';
 import { personalAssistantAgent } from './agents/personal-assistant-agent';
 import { weatherAgent } from './agents/weather-agent';
-import { notes } from './mcp/server';
 import { weatherWorkflow } from './workflows/weather-workflow';
 
 const {
@@ -30,10 +29,6 @@ const logger = new PinoLogger({
   level: 'info',
 });
 
-const mcpServers = {
-  notes,
-};
-
 const storage = new LibSQLStore({
   url: `file:${SQLITE_DB_PATH}${MASTRA_STORAGE_DB_NAME}`,
 });
@@ -51,7 +46,6 @@ const workflows = { weatherWorkflow };
 export const mastra = new Mastra({
   agents,
   logger,
-  mcpServers,
   storage,
   workflows,
   vectors,
