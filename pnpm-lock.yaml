@@ -27,8 +27,8 @@ importers:
         specifier: ^0.10.3
         version: 0.10.3(@mastra/core@0.10.6(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)
       '@mastra/memory':
-        specifier: ^0.10.3
-        version: 0.10.3(@mastra/core@0.10.6(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)
+        specifier: ^0.10.4
+        version: 0.10.4(@mastra/core@0.10.6(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)
       ai:
         specifier: 4.3.16
         version: 4.3.16(react@19.1.0)(zod@3.25.67)
@@ -657,8 +657,8 @@ packages:
       '@mastra/core': ^0.10.2-alpha.0
       zod: ^3.0.0
 
-  '@mastra/memory@0.10.3':
-    resolution: {integrity: sha512-GEAF5mgajff2HPqvjkX8ZFZ98axU5zXhH2NuX2R8odjv21m6viuEAGIAZxQNqK5kspeqCefYdLfrCoq7arOMzA==}
+  '@mastra/memory@0.10.4':
+    resolution: {integrity: sha512-ZYDwMQYljtRqp5vBN+HpiL5oR/9OTMXM/d5zkA9iVGC9u1uNzvh2SJD0cE81ujVAOpmYRBCr5V7VkFtuR+OkyQ==}
     peerDependencies:
       '@mastra/core': '>=0.10.4-0 <0.11.0'
 
@@ -4279,7 +4279,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mastra/memory@0.10.3(@mastra/core@0.10.6(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)':
+  '@mastra/memory@0.10.4(@mastra/core@0.10.6(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)':
     dependencies:
       '@mastra/core': 0.10.6(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67)
       '@upstash/redis': 1.35.0
@@ -4291,6 +4291,7 @@ snapshots:
       redis: 4.7.1
       xxhash-wasm: 1.1.0
       zod: 3.25.67
+      zod-to-json-schema: 3.24.5(zod@3.25.67)
     transitivePeerDependencies:
       - pg-native
       - react
