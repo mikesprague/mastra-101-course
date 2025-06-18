@@ -49,7 +49,7 @@
     "@types/node": "24.0.3",
     "cross-env": "7.0.3",
     "cz-git": "1.11.2",
-    "mastra": "^0.10.5",
+    "mastra": "^0.10.6",
     "tsx": "4.20.3",
     "typescript": "5.8.3"
   },
