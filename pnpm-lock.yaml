@@ -27,8 +27,8 @@ importers:
         specifier: ^0.10.5
         version: 0.10.6(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)
       '@mastra/memory':
-        specifier: ^0.10.4
-        version: 0.10.4(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)
+        specifier: ^0.11.3
+        version: 0.11.3(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)
       ai:
         specifier: 4.3.16
         version: 4.3.16(react@19.1.0)(zod@3.25.67)
@@ -520,10 +520,10 @@ packages:
       '@mastra/core': ^0.10.2-alpha.0
       zod: ^3.0.0
 
-  '@mastra/memory@0.10.4':
-    resolution: {integrity: sha512-ZYDwMQYljtRqp5vBN+HpiL5oR/9OTMXM/d5zkA9iVGC9u1uNzvh2SJD0cE81ujVAOpmYRBCr5V7VkFtuR+OkyQ==}
+  '@mastra/memory@0.11.3':
+    resolution: {integrity: sha512-MJny4YSZ0bMiEkghWyPHI29K2n3gpJ4c9cZ2beJsuI8YKpBla6fOkdk1oqcN+2A8wvFQcTghdk1U/0ApmjnLiA==}
     peerDependencies:
-      '@mastra/core': '>=0.10.4-0 <0.11.0'
+      '@mastra/core': '>=0.10.9-0 <0.11.0-0'
 
   '@mastra/schema-compat@0.10.5':
     resolution: {integrity: sha512-Qhz8W4Hz7b9tNoVW306NMzotVy11bya1OjiTN+pthj00HZoaH7nmK8SWBiX4drS+PyhIqA16X5AenELe2QgZag==}
@@ -1759,6 +1759,9 @@ packages:
 
   argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+
+  async-mutex@0.5.0:
+    resolution: {integrity: sha512-1A94B18jkJ3DYq284ohPxoXbfTA5HsQ7/Mf4DEhcyLx3Bz27Rh59iScbB6EPiP+B+joue6YCxcMXSbFC1tZKwA==}
 
   async@2.6.4:
     resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==}
@@ -3067,6 +3070,9 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
+  tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+
   tsx@4.20.3:
     resolution: {integrity: sha512-qjbnuR9Tr+FJOMBqJCW5ehvIo/buZq7vH7qD7JziU98h6l3qGy0a/yPFjwO+y0/T7GFpNgNAvEcPPVfyT8rrPQ==}
     engines: {node: '>=18.0.0'}
@@ -3748,12 +3754,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mastra/memory@0.10.4(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)':
+  '@mastra/memory@0.11.3(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)':
     dependencies:
       '@mastra/core': 0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67)
       '@upstash/redis': 1.35.1
       ai: 4.3.16(react@19.1.0)(zod@3.25.67)
+      async-mutex: 0.5.0
       js-tiktoken: 1.0.20
+      json-schema: 0.4.0
       pg: 8.16.3
       pg-pool: 3.10.1(pg@8.16.3)
       postgres: 3.4.7
@@ -5421,6 +5429,10 @@ snapshots:
 
   argparse@2.0.1: {}
 
+  async-mutex@0.5.0:
+    dependencies:
+      tslib: 2.8.1
+
   async@2.6.4:
     dependencies:
       lodash: 4.17.21
@@ -6750,6 +6762,8 @@ snapshots:
   tr46@0.0.3: {}
 
   trim-lines@3.0.1: {}
+
+  tslib@2.8.1: {}
 
   tsx@4.20.3:
     dependencies:
