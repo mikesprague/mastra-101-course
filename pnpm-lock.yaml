@@ -24,8 +24,8 @@ importers:
         specifier: ^0.10.2
         version: 0.10.2(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))
       '@mastra/mcp':
-        specifier: ^0.10.5
-        version: 0.10.5(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)
+        specifier: ^0.10.6
+        version: 0.10.6(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)
       '@mastra/memory':
         specifier: ^0.10.4
         version: 0.10.4(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(react@19.1.0)
@@ -105,6 +105,10 @@ packages:
   '@apidevtools/json-schema-ref-parser@11.9.3':
     resolution: {integrity: sha512-60vepv88RwcJtSHrD6MjIL6Ta3SOYbgfnkHb+ppAVK+o9mXprRtulx7VlRl3lN3bbvysAfCS7WMVfhUYemB0IQ==}
     engines: {node: '>= 16'}
+
+  '@apidevtools/json-schema-ref-parser@14.1.1':
+    resolution: {integrity: sha512-uGF1YGOzzD50L7HLNWclXmsEhQflw8/zZHIz0/AzkJrKL5r9PceUipZxR/cp/8veTk4TVfdDJLyIwXLjaP5ePg==}
+    engines: {node: '>= 20'}
 
   '@aws-crypto/crc32@3.0.0':
     resolution: {integrity: sha512-IzSgsrxUcsrejQbPVilIKy16kAT52EwB6zSaI+M3xxIhKh5+aldEyvI+z6erM7TCLB2BJsFrtHjp6/4/sr+3dA==}
@@ -645,8 +649,8 @@ packages:
     peerDependencies:
       '@mastra/core': '>=0.10.4-0 <0.11.0'
 
-  '@mastra/mcp@0.10.5':
-    resolution: {integrity: sha512-YOXptwjquGEjZkbzkYsgxF09YopUHFpg9sPgMasUHMpZ9P9NICDskg48iVtSxA9KEVjQ4bMk50dhBllkGXaN5Q==}
+  '@mastra/mcp@0.10.6':
+    resolution: {integrity: sha512-NB8ihMacWu+el4y0qMB1gcZ+vB6A8KMgDgTMqaOIWbx5NT8I6xNaSDn1JyjjeGvO1Wgljy5vaW35CfqxQhjIdA==}
     peerDependencies:
       '@mastra/core': ^0.10.2-alpha.0
       zod: ^3.0.0
@@ -668,8 +672,8 @@ packages:
       '@mastra/core': ^0.10.2-alpha.0
       zod: ^3.0.0
 
-  '@modelcontextprotocol/sdk@1.13.1':
-    resolution: {integrity: sha512-8q6+9aF0yA39/qWT/uaIj6zTpC+Qu07DnN/lb9mjoquCJsAh6l3HyYqc9O3t2j7GilseOQOQimLg7W3By6jqvg==}
+  '@modelcontextprotocol/sdk@1.16.0':
+    resolution: {integrity: sha512-8ofX7gkZcLj9H9rSd50mCgm3SSF8C7XoclxJuLoV0Cz3rEQ1tv9MZRYYvJtm9n1BiEQQMzSmE/w2AEkNacLYfg==}
     engines: {node: '>=18'}
 
   '@neon-rs/load@0.0.4':
@@ -1247,6 +1251,7 @@ packages:
   '@opentelemetry/instrumentation-redis-4@0.49.0':
     resolution: {integrity: sha512-i+Wsl7M2LXEDA2yXouNJ3fttSzzb5AhlehvSBVRIFuinY51XrrKSH66biO0eox+pYQMwAlPxJ778XcMQffN78A==}
     engines: {node: ^18.19.0 || >=20.6.0}
+    deprecated: Use "@opentelemetry/instrumentation-redis", which (as of v0.50.0) includes support for instrumenting redis v4.
     peerDependencies:
       '@opentelemetry/api': ^1.3.0
 
@@ -3758,6 +3763,11 @@ snapshots:
       '@types/json-schema': 7.0.15
       js-yaml: 4.1.0
 
+  '@apidevtools/json-schema-ref-parser@14.1.1':
+    dependencies:
+      '@types/json-schema': 7.0.15
+      js-yaml: 4.1.0
+
   '@aws-crypto/crc32@3.0.0':
     dependencies:
       '@aws-crypto/util': 3.0.0
@@ -4635,10 +4645,11 @@ snapshots:
       pino: 9.7.0
       pino-pretty: 13.0.0
 
-  '@mastra/mcp@0.10.5(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)':
+  '@mastra/mcp@0.10.6(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)':
     dependencies:
+      '@apidevtools/json-schema-ref-parser': 14.1.1
       '@mastra/core': 0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67)
-      '@modelcontextprotocol/sdk': 1.13.1
+      '@modelcontextprotocol/sdk': 1.16.0
       date-fns: 4.1.0
       exit-hook: 4.0.0
       fast-deep-equal: 3.1.3
@@ -4678,13 +4689,14 @@ snapshots:
       '@mastra/core': 0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67)
       zod: 3.25.67
 
-  '@modelcontextprotocol/sdk@1.13.1':
+  '@modelcontextprotocol/sdk@1.16.0':
     dependencies:
       ajv: 6.12.6
       content-type: 1.0.5
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
+      eventsource-parser: 3.0.3
       express: 5.1.0
       express-rate-limit: 7.5.1(express@5.1.0)
       pkce-challenge: 5.0.0
@@ -7402,7 +7414,7 @@ snapshots:
       '@mastra/core': 0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67)
       '@mastra/deployer': 0.10.8(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(typescript@5.8.3)
       '@mastra/loggers': 0.10.2(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))
-      '@mastra/mcp': 0.10.5(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)
+      '@mastra/mcp': 0.10.6(@mastra/core@0.10.8(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.67))(zod@3.25.67)
       '@opentelemetry/auto-instrumentations-node': 0.60.1(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0))
       '@opentelemetry/core': 2.0.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/exporter-trace-otlp-grpc': 0.202.0(@opentelemetry/api@1.9.0)
