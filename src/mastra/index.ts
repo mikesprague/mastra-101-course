@@ -2,11 +2,18 @@ import { Mastra } from '@mastra/core/mastra';
 import { LibSQLStore, LibSQLVector } from '@mastra/libsql';
 import { PinoLogger } from '@mastra/loggers';
 
+import { contentAgent } from './agents/content-agent';
 import { financialAgent } from './agents/finance-agent';
 import { learningAssistantAgent } from './agents/learning-assistant';
 import { memoryAgent } from './agents/memory-agent';
 import { personalAssistantAgent } from './agents/personal-assistant-agent';
 import { weatherAgent } from './agents/weather-agent';
+import {
+  aiContentWorkflow,
+  conditionalWorkflow,
+  contentWorkflow,
+  parallelAnalysisWorkflow,
+} from './workflows/content-workflow';
 import { weatherWorkflow } from './workflows/weather-workflow';
 
 const {
@@ -17,11 +24,12 @@ const {
 } = process.env;
 
 const agents = {
-  weatherAgent,
+  contentAgent,
   financialAgent,
   learningAssistantAgent,
   memoryAgent,
   personalAssistantAgent,
+  weatherAgent,
 };
 
 const logger = new PinoLogger({
@@ -41,7 +49,13 @@ const vectors = {
   [MASTRA_VECTORS_NAME]: vectorStore,
 };
 
-const workflows = { weatherWorkflow };
+const workflows = {
+  aiContentWorkflow,
+  conditionalWorkflow,
+  contentWorkflow,
+  parallelAnalysisWorkflow,
+  weatherWorkflow,
+};
 
 export const mastra = new Mastra({
   agents,
