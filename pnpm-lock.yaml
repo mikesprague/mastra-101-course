@@ -50,13 +50,13 @@ importers:
         version: 1.12.0
       mastra:
         specifier: 0.10.18
-        version: 0.10.18(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(@opentelemetry/api@1.9.0)(react@19.1.0)(typescript@5.8.3)
+        version: 0.10.18(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(@opentelemetry/api@1.9.0)(react@19.1.0)(typescript@5.9.2)
       tsx:
         specifier: 4.20.3
         version: 4.20.3
       typescript:
-        specifier: 5.8.3
-        version: 5.8.3
+        specifier: 5.9.2
+        version: 5.9.2
 
 packages:
 
@@ -3258,8 +3258,8 @@ packages:
     peerDependencies:
       typescript: ^4.7.2 || ^5
 
-  typescript@5.8.3:
-    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
+  typescript@5.9.2:
+    resolution: {integrity: sha512-CWBzXQrc/qOkhidw1OzBTQuYRbfyxDXJMVJ1XNwUHGROVmuaeiEm3OslpZ1RV96d7SKKjZKrSJu3+t/xlw3R9A==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -3941,7 +3941,7 @@ snapshots:
       - valibot
       - zod-openapi
 
-  '@mastra/deployer@0.12.1(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(typescript@5.8.3)':
+  '@mastra/deployer@0.12.1(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(typescript@5.9.2)':
     dependencies:
       '@babel/core': 7.28.0
       '@babel/helper-module-imports': 7.27.1
@@ -3967,7 +3967,7 @@ snapshots:
       rollup: 4.44.2
       rollup-plugin-esbuild: 6.2.1(esbuild@0.25.8)(rollup@4.44.2)
       rollup-plugin-node-externals: 8.0.1(rollup@4.44.2)
-      typescript-paths: 1.5.1(typescript@5.8.3)
+      typescript-paths: 1.5.1(typescript@5.9.2)
       zod: 3.25.76
     transitivePeerDependencies:
       - supports-color
@@ -6403,12 +6403,12 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.4
 
-  mastra@0.10.18(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(@opentelemetry/api@1.9.0)(react@19.1.0)(typescript@5.8.3):
+  mastra@0.10.18(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(@opentelemetry/api@1.9.0)(react@19.1.0)(typescript@5.9.2):
     dependencies:
       '@clack/prompts': 0.11.0
       '@lukeed/uuid': 2.0.1
       '@mastra/core': 0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76)
-      '@mastra/deployer': 0.12.1(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(typescript@5.8.3)
+      '@mastra/deployer': 0.12.1(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(typescript@5.9.2)
       '@mastra/loggers': 0.10.5(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))
       '@mastra/mcp': 0.10.9(@mastra/core@0.10.15(openapi-types@12.1.3)(react@19.1.0)(zod@3.25.76))(zod@3.25.76)
       '@opentelemetry/auto-instrumentations-node': 0.62.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.0.1(@opentelemetry/api@1.9.0))
@@ -7066,11 +7066,11 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.1
 
-  typescript-paths@1.5.1(typescript@5.8.3):
+  typescript-paths@1.5.1(typescript@5.9.2):
     dependencies:
-      typescript: 5.8.3
+      typescript: 5.9.2
 
-  typescript@5.8.3: {}
+  typescript@5.9.2: {}
 
   ufo@1.6.1: {}
 
