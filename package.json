@@ -51,7 +51,7 @@
     "cross-env": "10.0.0",
     "cz-git": "1.12.0",
     "mastra": "0.12.3",
-    "tsx": "4.20.5",
+    "tsx": "4.20.6",
     "typescript": "5.9.2"
   },
   "resolutions": {
