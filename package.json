@@ -43,7 +43,7 @@
     "@mastra/mcp": "beta",
     "@mastra/memory": "beta",
     "ai": "5.0.116",
-    "zod": "4.1.13"
+    "zod": "4.3.4"
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.10",
