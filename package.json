@@ -40,7 +40,7 @@
     "@mastra/core": "1.0.0-beta.21",
     "@mastra/libsql": "1.0.0-beta.11",
     "@mastra/loggers": "1.0.0-beta.4",
-    "@mastra/mcp": "1.0.0-beta.8",
+    "@mastra/mcp": "1.0.0-beta.9",
     "@mastra/memory": "1.0.0-beta.12",
     "ai": "6.0.24",
     "zod": "4.3.5"
