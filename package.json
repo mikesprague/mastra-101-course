@@ -42,7 +42,7 @@
     "@mastra/loggers": "1.0.0-beta.4",
     "@mastra/mcp": "1.0.0-beta.8",
     "@mastra/memory": "1.0.0-beta.11",
-    "ai": "6.0.22",
+    "ai": "6.0.24",
     "zod": "4.3.5"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
   },
   "overrides": {
     "@modelcontextprotocol/sdk": "1.25.2",
-    "ai": "6.0.22",
+    "ai": "6.0.24",
     "@libsql/client": "0.17.0",
     "body-parser": "2.2.2",
     "hono": "4.11.3",
@@ -65,7 +65,7 @@
   },
   "resolutions": {
     "@modelcontextprotocol/sdk": "1.25.2",
-    "ai": "6.0.22",
+    "ai": "6.0.24",
     "@libsql/client": "0.17.0",
     "body-parser": "2.2.2",
     "hono": "4.11.3",
