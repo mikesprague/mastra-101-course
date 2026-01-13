@@ -36,7 +36,7 @@
   },
   "packageManager": "pnpm@10.24.0",
   "dependencies": {
-    "@ai-sdk/azure": "3.0.8",
+    "@ai-sdk/azure": "3.0.9",
     "@mastra/core": "1.0.0-beta.21",
     "@mastra/libsql": "1.0.0-beta.11",
     "@mastra/loggers": "1.0.0-beta.4",
