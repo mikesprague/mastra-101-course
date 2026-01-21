@@ -37,7 +37,7 @@
   "packageManager": "pnpm@10.28.0",
   "dependencies": {
     "@ai-sdk/azure": "3.0.13",
-    "@mastra/core": "^1.0.0-beta.26",
+    "@mastra/core": "^1.0.4",
     "@mastra/libsql": "^1.0.0-beta.14",
     "@mastra/loggers": "^1.0.0",
     "@mastra/mcp": "^1.0.0-beta.10",
