@@ -41,7 +41,7 @@
     "@mastra/libsql": "^1.0.0",
     "@mastra/loggers": "^1.0.1",
     "@mastra/mcp": "^1.0.0",
-    "@mastra/memory": "^1.0.0",
+    "@mastra/memory": "^1.0.1",
     "ai": "6.0.62",
     "zod": "4.3.6"
   },
