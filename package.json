@@ -52,7 +52,7 @@
     "cz-git": "1.12.0",
     "mastra": "^1.6.0",
     "tsx": "4.21.0",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   },
   "overrides": {
     "@libsql/client": "^0.17.0",
