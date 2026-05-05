@@ -23,8 +23,8 @@ importers:
   .:
     dependencies:
       '@ai-sdk/azure':
-        specifier: 3.0.60
-        version: 3.0.60(zod@4.3.6)
+        specifier: 3.0.61
+        version: 3.0.61(zod@4.3.6)
       '@mastra/core':
         specifier: ^1.31.0
         version: 1.31.0(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.3.6))(zod@4.3.6))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.3.6))(zod@4.3.6))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.3.6))(@types/json-schema@7.0.15)(express@5.2.1)(openapi-types@12.1.3)(zod@4.3.6)
@@ -86,8 +86,8 @@ packages:
       express:
         optional: true
 
-  '@ai-sdk/azure@3.0.60':
-    resolution: {integrity: sha512-26fnq+Us91g4/fUbMgOgomPvPXbV7z2gwYzFd/T7HtoFoCb177ZnCozofkOtaBCFKGIXgGQduCUuxIR0bqllnQ==}
+  '@ai-sdk/azure@3.0.61':
+    resolution: {integrity: sha512-SJPgUuJYP1iU6BvE87wMUVaolJk0u69Z2lCslFuFXSSJJ9EF6HNrEk+NLtZzCFG5Cic46dhn3zC0EHICRXntoA==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 4.3.6
@@ -98,8 +98,8 @@ packages:
     peerDependencies:
       zod: 4.3.6
 
-  '@ai-sdk/openai@3.0.59':
-    resolution: {integrity: sha512-mkqtjtOsTM2V0zSfNpHYYN1rUxvh0BrQO7GZTZUI+PCt4mBpr4huVWzzKSAZ0dOE7CfiDY1hKAjr0d45ujvHsQ==}
+  '@ai-sdk/openai@3.0.60':
+    resolution: {integrity: sha512-vZKqbDSCF1T65gDMG2ILJ2NAEpG45U2VtvEve1Fv/WRLu2i5TPUqxjlGKm+5a7Dd57Yr6CGePxrJhsQJC8LJ3A==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 4.3.6
@@ -2723,9 +2723,9 @@ snapshots:
     optionalDependencies:
       express: 5.2.1
 
-  '@ai-sdk/azure@3.0.60(zod@4.3.6)':
+  '@ai-sdk/azure@3.0.61(zod@4.3.6)':
     dependencies:
-      '@ai-sdk/openai': 3.0.59(zod@4.3.6)
+      '@ai-sdk/openai': 3.0.60(zod@4.3.6)
       '@ai-sdk/provider': 3.0.10
       '@ai-sdk/provider-utils': 4.0.26(zod@4.3.6)
       zod: 4.3.6
@@ -2737,7 +2737,7 @@ snapshots:
       '@vercel/oidc': 3.2.0
       zod: 4.3.6
 
-  '@ai-sdk/openai@3.0.59(zod@4.3.6)':
+  '@ai-sdk/openai@3.0.60(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
       '@ai-sdk/provider-utils': 4.0.26(zod@4.3.6)
