@@ -38,8 +38,8 @@ importers:
         specifier: ^1.8.1
         version: 1.8.1(@mastra/core@1.37.1(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.4.3))(@types/json-schema@7.0.15)(ai@6.0.194(zod@4.4.3))(express@5.2.1)(openapi-types@12.1.3)(zod@4.4.3))(zod@4.4.3)
       '@mastra/memory':
-        specifier: ^1.20.0
-        version: 1.20.0(@mastra/core@1.37.1(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.4.3))(@types/json-schema@7.0.15)(ai@6.0.194(zod@4.4.3))(express@5.2.1)(openapi-types@12.1.3)(zod@4.4.3))(zod@4.4.3)
+        specifier: ^1.20.2
+        version: 1.20.2(@mastra/core@1.37.1(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.4.3))(@types/json-schema@7.0.15)(ai@6.0.194(zod@4.4.3))(express@5.2.1)(openapi-types@12.1.3)(zod@4.4.3))(zod@4.4.3)
       ai:
         specifier: ^6.0.175
         version: 6.0.194(zod@4.4.3)
@@ -733,14 +733,20 @@ packages:
     peerDependencies:
       '@mastra/core': '>=1.0.0-0 <2.0.0-0'
 
-  '@mastra/memory@1.20.0':
-    resolution: {integrity: sha512-pcPjRwTmKslQ97s2t4KoFGQh0BV+gQ/WAIYI8f7LTnsLzfS4PzLO8ZfIob1mJHZrlYDI7TTyM4Gnust43gYr4A==}
+  '@mastra/memory@1.20.2':
+    resolution: {integrity: sha512-J999LmWrEniRSz5MiLxtjX+lYwwASPrZI6+oSoW1h01rzODpw+0CMFIIzbVFluteD1BQLk8F/TGI4dkXDS0HHA==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.4.1-0 <2.0.0-0'
 
   '@mastra/schema-compat@1.2.10':
     resolution: {integrity: sha512-8Fg8PeO7GsRPOrEZAzc5udZgsF9ZDxih5JSoxjgnR79d0ImjKffhcoysPW6wIYXPEZ5i6/QDNR7rCazZZSD5Tg==}
+    engines: {node: '>=22.13.0'}
+    peerDependencies:
+      zod: 4.4.3
+
+  '@mastra/schema-compat@1.2.11':
+    resolution: {integrity: sha512-wN8eTy/g14Mg3kWukhoIjd5SpFtLQ8gOltbELe9nM2Ruzm4jK8tFr1ZZNZwvLYnpq7NJG5a8F0ZFCjXFOEwx0w==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       zod: 4.4.3
@@ -1762,6 +1768,10 @@ packages:
 
   devlop@1.1.0:
     resolution: {integrity: sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==}
+
+  diff@8.0.4:
+    resolution: {integrity: sha512-DPi0FmjiSU5EvQV0++GFDOJ9ASQUVFh5kD+OzOnYdi7n3Wpm9hWWGfB/O2blfHcMVTL5WkQXSnRiK9makhrcnw==}
+    engines: {node: '>=0.3.1'}
 
   dotenv@17.4.2:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
@@ -3774,11 +3784,12 @@ snapshots:
       - supports-color
       - zod
 
-  '@mastra/memory@1.20.0(@mastra/core@1.37.1(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.4.3))(@types/json-schema@7.0.15)(ai@6.0.194(zod@4.4.3))(express@5.2.1)(openapi-types@12.1.3)(zod@4.4.3))(zod@4.4.3)':
+  '@mastra/memory@1.20.2(@mastra/core@1.37.1(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.4.3))(@types/json-schema@7.0.15)(ai@6.0.194(zod@4.4.3))(express@5.2.1)(openapi-types@12.1.3)(zod@4.4.3))(zod@4.4.3)':
     dependencies:
       '@mastra/core': 1.37.1(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-community/standard-openapi@0.2.9(@standard-community/standard-json@0.3.5(@standard-schema/spec@1.1.0)(@types/json-schema@7.0.15)(quansync@0.2.11)(zod-to-json-schema@3.25.2(zod@4.4.3))(zod@4.4.3))(@standard-schema/spec@1.1.0)(openapi-types@12.1.3)(zod@4.4.3))(@types/json-schema@7.0.15)(ai@6.0.194(zod@4.4.3))(express@5.2.1)(openapi-types@12.1.3)(zod@4.4.3)
-      '@mastra/schema-compat': 1.2.10(zod@4.4.3)
+      '@mastra/schema-compat': 1.2.11(zod@4.4.3)
       async-mutex: 0.5.0
+      diff: 8.0.4
       image-size: 2.0.2
       json-schema: 0.4.0
       lru-cache: 11.5.1
@@ -3790,6 +3801,14 @@ snapshots:
       - zod
 
   '@mastra/schema-compat@1.2.10(zod@4.4.3)':
+    dependencies:
+      json-schema-to-zod: 2.8.1
+      zod: 4.4.3
+      zod-from-json-schema: 0.5.2
+      zod-from-json-schema-v3: zod-from-json-schema@0.0.5
+      zod-to-json-schema: 3.25.2(zod@4.4.3)
+
+  '@mastra/schema-compat@1.2.11(zod@4.4.3)':
     dependencies:
       json-schema-to-zod: 2.8.1
       zod: 4.4.3
@@ -4521,6 +4540,8 @@ snapshots:
   devlop@1.1.0:
     dependencies:
       dequal: 2.0.3
+
+  diff@8.0.4: {}
 
   dotenv@17.4.2: {}
 
