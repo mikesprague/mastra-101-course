@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@ai-sdk/azure": "3.0.69",
-    "@mastra/core": "^1.37.1",
+    "@mastra/core": "^1.40.0",
     "@mastra/libsql": "^1.12.1",
     "@mastra/loggers": "^1.1.2",
     "@mastra/mcp": "^1.9.1",
