@@ -37,7 +37,7 @@
     "@ai-sdk/azure": "3.0.69",
     "@mastra/core": "^1.37.1",
     "@mastra/libsql": "^1.11.1",
-    "@mastra/loggers": "^1.1.1",
+    "@mastra/loggers": "^1.1.2",
     "@mastra/mcp": "^1.8.1",
     "@mastra/memory": "^1.20.0",
     "ai": "6.0.194",
