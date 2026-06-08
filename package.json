@@ -44,7 +44,7 @@
     "zod": "4.4.3"
   },
   "devDependencies": {
-    "@types/node": "25.9.1",
+    "@types/node": "25.9.2",
     "cross-env": "10.1.0",
     "cz-git": "1.13.1",
     "mastra": "^1.12.2",
