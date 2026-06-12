@@ -38,8 +38,8 @@ importers:
         specifier: ^1.9.1
         version: 1.9.1(@mastra/core@1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3))(zod@4.4.3)
       '@mastra/memory':
-        specifier: ^1.20.2
-        version: 1.20.2(@mastra/core@1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3))(zod@4.4.3)
+        specifier: ^1.20.3
+        version: 1.20.3(@mastra/core@1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3))(zod@4.4.3)
       ai:
         specifier: ^6.0.175
         version: 6.0.201(zod@4.4.3)
@@ -723,8 +723,8 @@ packages:
     peerDependencies:
       '@mastra/core': '>=1.0.0-0 <2.0.0-0'
 
-  '@mastra/memory@1.20.2':
-    resolution: {integrity: sha512-J999LmWrEniRSz5MiLxtjX+lYwwASPrZI6+oSoW1h01rzODpw+0CMFIIzbVFluteD1BQLk8F/TGI4dkXDS0HHA==}
+  '@mastra/memory@1.20.3':
+    resolution: {integrity: sha512-k/1UHJ1z2PgPRDUC7L4tDLJ5ypTm6RqPT6sE368owaPTsQRodDQroQRJIVqm9gKPV5QgFMdoCjFAxMqYYbSUog==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@mastra/core': '>=1.4.1-0 <2.0.0-0'
@@ -3023,8 +3023,8 @@ packages:
   zod-from-json-schema@0.0.5:
     resolution: {integrity: sha512-zYEoo86M1qpA1Pq6329oSyHLS785z/mTwfr9V1Xf/ZLhuuBGaMlDGu/pDVGVUe4H4oa1EFgWZT53DP0U3oT9CQ==}
 
-  zod-from-json-schema@0.5.2:
-    resolution: {integrity: sha512-/dNaicfdhJTOuUd4RImbLUE2g5yrSzzDjI/S6C2vO2ecAGZzn9UcRVgtyLSnENSmAOBRiSpUdzDS6fDWX3Z35g==}
+  zod-from-json-schema@0.5.3:
+    resolution: {integrity: sha512-44YFiuq+WHw9YZQAo/Ad0F7o9c/im0Q6cnHI23BsXhEmZtkNn4cD0bljLMMjkfb/EidopPWdsmKI8EvLHX5ZyA==}
 
   zod-to-json-schema@3.25.2:
     resolution: {integrity: sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==}
@@ -3674,7 +3674,7 @@ snapshots:
       - supports-color
       - zod
 
-  '@mastra/memory@1.20.2(@mastra/core@1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3))(zod@4.4.3)':
+  '@mastra/memory@1.20.3(@mastra/core@1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3))(zod@4.4.3)':
     dependencies:
       '@mastra/core': 1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3)
       '@mastra/schema-compat': 1.2.11(zod@4.4.3)
@@ -3694,7 +3694,7 @@ snapshots:
     dependencies:
       json-schema-to-zod: 2.8.1
       zod: 4.4.3
-      zod-from-json-schema: 0.5.2
+      zod-from-json-schema: 0.5.3
       zod-from-json-schema-v3: zod-from-json-schema@0.0.5
       zod-to-json-schema: 3.25.2(zod@4.4.3)
 
@@ -6051,7 +6051,7 @@ snapshots:
     dependencies:
       zod: 4.4.3
 
-  zod-from-json-schema@0.5.2:
+  zod-from-json-schema@0.5.3:
     dependencies:
       zod: 4.4.3
 
