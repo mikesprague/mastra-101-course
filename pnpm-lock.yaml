@@ -23,8 +23,8 @@ importers:
   .:
     dependencies:
       '@ai-sdk/azure':
-        specifier: 3.0.72
-        version: 3.0.72(zod@4.4.3)
+        specifier: 3.0.73
+        version: 3.0.73(zod@4.4.3)
       '@mastra/core':
         specifier: ^1.41.0
         version: 1.41.0(ai@6.0.201(zod@4.4.3))(express@5.2.1)(zod@4.4.3)
@@ -89,14 +89,14 @@ packages:
       express:
         optional: true
 
-  '@ai-sdk/azure@3.0.72':
-    resolution: {integrity: sha512-uGyTz78k7qhUrvwNhivvgKZCvLQeX7DpEZgpmFkOfTmWQT7e4q+pRSu3V0zc9BmUamc0OuCRl09bdeLkBlmnsw==}
+  '@ai-sdk/azure@3.0.73':
+    resolution: {integrity: sha512-N7UtCc5rEJ9jkSH+1pRYH4GUufNVFAxBMdMbD5T/l9xvDSpMp6HCjmvGRtKGZH3QIrIY5L+vx7MKj5XMOaJAiQ==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 4.4.3
 
-  '@ai-sdk/deepseek@2.0.36':
-    resolution: {integrity: sha512-7K0iMfNCpJgU8sxpBb7iuxZdjRIJO2ooGH/DkDLU9FKFwhVYBHvL145AgtPjJjle1PGJLGBg5as3PMt24IBuVw==}
+  '@ai-sdk/deepseek@2.0.37':
+    resolution: {integrity: sha512-o7zAncB8fpBKSPp/EMEHI0FUAtn2P8E8jna56kdNszjhPPe+8Hp5kTZ1Ybo5kqZMpMc+G6xMvjQ3lXFpZyJt3A==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 4.4.3
@@ -107,8 +107,8 @@ packages:
     peerDependencies:
       zod: 4.4.3
 
-  '@ai-sdk/openai@3.0.69':
-    resolution: {integrity: sha512-T/J3ED6ERDsine+crkXHfraisSG20k6BkBdgjvXCvySYnnJ19IaLIOsQPYfvXdOsKrl0LVNghooTV/nKCA7SmQ==}
+  '@ai-sdk/openai@3.0.70':
+    resolution: {integrity: sha512-0sAaS5IrgHvLF1OUHCB1fV+d4HCvfUvhnf5Hpq2yrzFRPLKdLv6TDohWOt/vmf1A6tXO1DuQKKsSuNqG3Rydgw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 4.4.3
@@ -121,6 +121,12 @@ packages:
 
   '@ai-sdk/provider-utils@4.0.27':
     resolution: {integrity: sha512-ubkAJ+xODouwtmN1tYlvTPphH1hPOBfZaEQe8U7skGvFAnIRs9PPpsq57bC2+Ky/MB4yzhd6YOsxTAx9sGpazw==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      zod: 4.4.3
+
+  '@ai-sdk/provider-utils@4.0.28':
+    resolution: {integrity: sha512-nCtGJY43Kqwoyk0rYLj80a3eyXxcaWwyu+lYZDHgY+U6JbYYyvRdRTSy+XCDIB91rFH0Ul0eMDHmDr+YMYtrSw==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: 4.4.3
@@ -3045,18 +3051,18 @@ snapshots:
     optionalDependencies:
       express: 5.2.1
 
-  '@ai-sdk/azure@3.0.72(zod@4.4.3)':
+  '@ai-sdk/azure@3.0.73(zod@4.4.3)':
     dependencies:
-      '@ai-sdk/deepseek': 2.0.36(zod@4.4.3)
-      '@ai-sdk/openai': 3.0.69(zod@4.4.3)
+      '@ai-sdk/deepseek': 2.0.37(zod@4.4.3)
+      '@ai-sdk/openai': 3.0.70(zod@4.4.3)
       '@ai-sdk/provider': 3.0.10
-      '@ai-sdk/provider-utils': 4.0.27(zod@4.4.3)
+      '@ai-sdk/provider-utils': 4.0.28(zod@4.4.3)
       zod: 4.4.3
 
-  '@ai-sdk/deepseek@2.0.36(zod@4.4.3)':
+  '@ai-sdk/deepseek@2.0.37(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
-      '@ai-sdk/provider-utils': 4.0.27(zod@4.4.3)
+      '@ai-sdk/provider-utils': 4.0.28(zod@4.4.3)
       zod: 4.4.3
 
   '@ai-sdk/gateway@3.0.127(zod@4.4.3)':
@@ -3066,10 +3072,10 @@ snapshots:
       '@vercel/oidc': 3.2.0
       zod: 4.4.3
 
-  '@ai-sdk/openai@3.0.69(zod@4.4.3)':
+  '@ai-sdk/openai@3.0.70(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
-      '@ai-sdk/provider-utils': 4.0.27(zod@4.4.3)
+      '@ai-sdk/provider-utils': 4.0.28(zod@4.4.3)
       zod: 4.4.3
 
   '@ai-sdk/provider-utils@3.0.25(zod@4.4.3)':
@@ -3080,6 +3086,13 @@ snapshots:
       zod: 4.4.3
 
   '@ai-sdk/provider-utils@4.0.27(zod@4.4.3)':
+    dependencies:
+      '@ai-sdk/provider': 3.0.10
+      '@standard-schema/spec': 1.1.0
+      eventsource-parser: 3.1.0
+      zod: 4.4.3
+
+  '@ai-sdk/provider-utils@4.0.28(zod@4.4.3)':
     dependencies:
       '@ai-sdk/provider': 3.0.10
       '@standard-schema/spec': 1.1.0
