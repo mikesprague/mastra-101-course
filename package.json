@@ -34,7 +34,7 @@
     "ts:typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@ai-sdk/azure": "3.0.76",
+    "@ai-sdk/azure": "3.0.77",
     "@mastra/core": "^1.45.0",
     "@mastra/libsql": "^1.14.0",
     "@mastra/loggers": "^1.1.2",
