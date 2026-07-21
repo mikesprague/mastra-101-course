@@ -57,7 +57,7 @@
     "@libsql/client": "^0.17.3",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "ajv": "^8.20.0",
-    "body-parser": "^2.2.2",
+    "body-parser": "^2.3.0",
     "esbuild": "^0.28.1",
     "hono": "^4.12.25",
     "js-yaml": "^4.2.0",
