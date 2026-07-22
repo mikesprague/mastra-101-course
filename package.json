@@ -59,7 +59,7 @@
     "ajv": "^8.20.0",
     "body-parser": "^2.3.0",
     "esbuild": "^0.28.1",
-    "hono": "^4.12.25",
+    "hono": "^4.12.31",
     "js-yaml": "^4.2.0",
     "jsondiffpatch": "^0.7.6",
     "minimatch": "^10.2.5",
