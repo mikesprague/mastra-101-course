@@ -40,7 +40,7 @@
     "@mastra/loggers": "^1.2.0",
     "@mastra/mcp": "^1.15.0",
     "@mastra/memory": "^1.24.0",
-    "ai": "7.0.47",
+    "ai": "7.0.48",
     "zod": "4.4.3"
   },
   "devDependencies": {
