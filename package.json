@@ -46,7 +46,7 @@
   "devDependencies": {
     "@types/node": "26.2.0",
     "cross-env": "10.1.0",
-    "cz-git": "1.13.2",
+    "cz-git": "1.14.0",
     "mastra": "^1.26.0",
     "oxfmt": "0.63.0",
     "oxlint": "1.79.0",
