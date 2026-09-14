@@ -41,7 +41,7 @@
     "@mastra/mcp": "^1.17.3",
     "@mastra/memory": "^1.28.2",
     "ai": "7.0.97",
-    "zod": "4.5.4"
+    "zod": "4.6.2"
   },
   "devDependencies": {
     "@types/node": "26.5.0",
@@ -68,7 +68,7 @@
     "qs": "^6.16.0",
     "rollup": "^4.63.1",
     "uuid": "^14.0.2",
-    "zod": "4.5.4"
+    "zod": "4.6.2"
   },
   "config": {
     "commitizen": {
