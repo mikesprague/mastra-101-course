@@ -44,7 +44,7 @@
     "zod": "4.5.4"
   },
   "devDependencies": {
-    "@types/node": "26.5.0",
+    "@types/node": "26.5.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "cross-env": "10.1.0",
     "cz-git": "1.14.0",
