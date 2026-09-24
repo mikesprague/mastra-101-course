@@ -50,7 +50,7 @@
     "cz-git": "1.14.0",
     "mastra": "^1.30.0",
     "oxfmt": "0.68.0",
-    "oxlint": "1.83.0",
+    "oxlint": "1.84.0",
     "tsx": "4.23.15",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   },
