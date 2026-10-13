@@ -48,7 +48,7 @@
     "@typescript/native": "npm:typescript@7.0.2",
     "cross-env": "10.1.0",
     "cz-git": "1.14.0",
-    "mastra": "^1.32.1",
+    "mastra": "^1.33.0",
     "oxfmt": "0.72.0",
     "oxlint": "1.87.0",
     "tsx": "4.23.15",
