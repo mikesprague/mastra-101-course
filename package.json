@@ -49,7 +49,7 @@
     "cross-env": "10.1.0",
     "cz-git": "1.14.0",
     "mastra": "^1.38.0",
-    "oxfmt": "0.76.0",
+    "oxfmt": "0.77.0",
     "oxlint": "1.92.0",
     "tsx": "4.23.15",
     "typescript": "npm:@typescript/typescript6@6.0.2"
